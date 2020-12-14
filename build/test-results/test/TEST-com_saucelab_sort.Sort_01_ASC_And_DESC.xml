@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com_saucelab_sort.Sort_01_ASC_And_DESC" tests="1" skipped="1" failures="0" errors="0" timestamp="2020-12-13T16:00:11" hostname="DESKTOP-2PPCJHK" time="0.33">
+  <properties/>
+  <testcase name="Sort_01_sortName" classname="com_saucelab_sort.Sort_01_ASC_And_DESC" time="0.33">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[---------- Sort_01_sortName STARTED test ----------
+[INFO ] [2020-12-13 23:00:11,590]  -------------------------- FAILED -------------------------- 
+[INFO ] [2020-12-13 23:00:11,723]  -------------------------- FAILED -------------------------- 
+---------- Sort_01_sortName FAILED test ----------
+---------- Sort_01_sortName FAILED test ----------
+]]></system-out>
+  <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 87.0.4280.88 (89e2380a3e36c3464b5dd1302349b1382549290d-refs/branch-heads/4280@{#1761}) on port 1341
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Dec 13, 2020 11:00:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

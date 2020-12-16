@@ -1,0 +1,13 @@
+{
+  "Register": {
+    "firstname": "HNP",
+    "lastname": "Yat",
+    "dob": "13/03/3333",
+    "company": "TMA",
+    "email": "banana@gmail.com"
+  },
+  "Login": {
+    "user": "banana",
+    "password": "123456"
+  }
+}

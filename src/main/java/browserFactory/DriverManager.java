@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import java.util.concurrent.TimeUnit;
 
 public abstract class DriverManager {
-    protected WebDriver driver;
+    public static WebDriver driver;
 
     protected abstract void createDriver();
 
@@ -22,7 +22,4 @@ public abstract class DriverManager {
         return driver;
     }
 
-    public WebDriver getDriverForScreenshot(){
-        return driver;
-    }
 }

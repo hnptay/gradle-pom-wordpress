@@ -12,12 +12,14 @@ pageFactory_wordpress/PageGeneratorManager.java
  pageFactory_wordpress.PageGeneratorManager
 pageUI_bankGuru/AbstractGuruPageUI.java
  pageUI_bankGuru.AbstractGuruPageUI
+commons/DataHelper.java
+ commons.DataHelper
 pageFactory_bankguru/PageGeneratorManager.java
  pageFactory_bankguru.PageGeneratorManager
 pageUI_bankGuru/EditCustomerPageUI.java
  pageUI_bankGuru.EditCustomerPageUI
-browserFactory/EdgeDriverManager.java
- browserFactory.EdgeDriverManager
+commons/AbstractTest.java
+ commons.AbstractTest
 pageObject_jQuery/DataTablePageObject.java
  pageObject_jQuery.DataTablePageObject
 pageObject_wordpress/ReadPageObject.java
@@ -44,6 +46,8 @@ pageObject_saucelab/PageGeneratorManager.java
  pageObject_saucelab.PageGeneratorManager
 commons/PageGeneratorManager.java
  commons.PageGeneratorManager
+commons/TestNGAppender.java
+ commons.TestNGAppender
 pageUI_wordpress/LinkPageUI.java
  pageUI_wordpress.LinkPageUI
 pageUI_wordpress/HomePageUI.java
@@ -60,12 +64,12 @@ pageUI_wordpress/DashBoardPageUI.java
  pageUI_wordpress.DashBoardPageUI
 pageFactory_wordpress/ReadPageObject.java
  pageFactory_wordpress.ReadPageObject
-commons/TestNGAppender.java
- commons.TestNGAppender
+pageUI_wordpress/NewAndEditPostPageUI.java
+ pageUI_wordpress.NewAndEditPostPageUI
 pageUI_wordpress/PostDetailPageUI.java
  pageUI_wordpress.PostDetailPageUI
-pageObject_bankguru/HomePageObject.java
- pageObject_bankguru.HomePageObject
+pageObject_bankguru/RegisterPageObject.java
+ pageObject_bankguru.RegisterPageObject
 pageFactory_wordpress/AbstractPage.java
  pageFactory_wordpress.AbstractPage
 pageObject_wordpress/DashBoardPageObject.java
@@ -104,19 +108,17 @@ pageObject_wordpress/LoginPageObject.java
  pageObject_wordpress.LoginPageObject
 pageObject_wordpress/MediaPageObject.java
  pageObject_wordpress.MediaPageObject
-pageObject_bankguru/RegisterPageObject.java
- pageObject_bankguru.RegisterPageObject
-pageUI_wordpress/NewAndEditPostPageUI.java
- pageUI_wordpress.NewAndEditPostPageUI
+pageObject_bankguru/HomePageObject.java
+ pageObject_bankguru.HomePageObject
 browserFactory/ChromeDriverManager.java
  browserFactory.ChromeDriverManager
-browserFactory/FirefoxDriverManager.java
- browserFactory.FirefoxDriverManager
+reportConfig/ReportNGListener.java
+ reportConfig.ReportNGListener
 browserFactory/DriverFactory.java
  browserFactory.DriverFactory
 browserFactory/DriverManager.java
  browserFactory.DriverManager
-commons/AbstractTest.java
- commons.AbstractTest
-reportConfig/ReportNGListener.java
- reportConfig.ReportNGListener
+browserFactory/EdgeDriverManager.java
+ browserFactory.EdgeDriverManager
+browserFactory/FirefoxDriverManager.java
+ browserFactory.FirefoxDriverManager

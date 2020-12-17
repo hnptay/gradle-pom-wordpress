@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+
 public class Sort_01_ASC_And_DESC extends AbstractTest {
     private WebDriver driver;
     private SaucelabPageObject saucelabPage;
@@ -18,7 +19,9 @@ public class Sort_01_ASC_And_DESC extends AbstractTest {
     @Parameters({"browser", "url"})
     @BeforeClass
     public void beforeClass(String browserName, String url) {
-        driver = getBrowserDriver(browserName, url);
+        //driver = getBrowserDriver(browserName, url);
+        DriverManager driverManager = DriverFactory.getBrowserManager(browserName);
+        driver = driverManager.getDriver(url);
         saucelabPage = PageGeneratorManager.getSaucelabPage(driver);
     }
 
@@ -32,11 +35,10 @@ public class Sort_01_ASC_And_DESC extends AbstractTest {
         saucelabPage.selectitemInSortDropDown("Name (A to Z)");
         verifyTrue(saucelabPage.isNameSortAscending());
         saucelabPage.selectitemInSortDropDown("Name (Z to A)");
-        //verifyTrue(saucelabPage.isNameSortDescending());
-        verifyTrue(false);
+        verifyTrue(saucelabPage.isNameSortDescending());
     }
 
-    //@Test
+    @Test
     public void Sort_02_sortPrice(){
         saucelabPage.selectitemInSortDropDown("Price (low to high)");
         verifyTrue(saucelabPage.isPriceSortAscending());

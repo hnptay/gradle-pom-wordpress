@@ -1,6 +1,6 @@
 package reportConfig;
 
-import commons.AbstractTest;
+import browserFactory.DriverManager;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-public class ReportNGListener extends AbstractTest implements ITestListener {
+public class ReportNGListener implements ITestListener {
 
     @Override
     public void onStart(ITestContext context) {
@@ -43,7 +43,7 @@ public class ReportNGListener extends AbstractTest implements ITestListener {
         System.setProperty("org.uncommons.reportng.escape-output", "false");
 
         Object testClass = result.getInstance();
-        WebDriver webDriver = ((AbstractTest) testClass).getDriver();
+        WebDriver webDriver = DriverManager.driver; //((AbstractTest) testClass).getDriver();
         String screenshotPath = captureScreenshot(webDriver, result.getName());
         Reporter.getCurrentTestResult();
         Reporter.log("<br><a target=\"_blank\" href=\"file:///" + screenshotPath + "\">" + "<img src=\"file:///" + screenshotPath + "\" " + "height='100' width='150'/> " + "</a></br>");

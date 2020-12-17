@@ -1,5 +1,6 @@
 package commons;
 
+import browserFactory.DriverManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -27,17 +28,17 @@ public abstract class AbstractTest {
         log = LogFactory.getLog(getClass());
     }
 
-    public int randomNumber(int range){
+    public int randomNumber(int range) {
         Random random = new Random();
         return random.nextInt(range);
     }
 
-    public WebDriver getDriver(){
+    public WebDriver getDriver() {
         return driver;
     }
 
     public WebDriver getBrowserDriver(String browserDriver, String url) {
-        switch (browserDriver){
+        switch (browserDriver) {
             case "edge":
                 WebDriverManager.edgedriver().setup();
                 driver = new EdgeDriver();
@@ -193,7 +194,7 @@ public abstract class AbstractTest {
         return localDateTime.getYear() + "";
     }
 
-    public String dateTimeCustomFormat(){
+    public String dateTimeCustomFormat() {
         return getCurrentMonthName() + " " + getCurrentDate() + ", " + getCurrentYear();
     }
 

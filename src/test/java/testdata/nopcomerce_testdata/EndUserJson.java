@@ -29,6 +29,8 @@ public class EndUserJson {
     String user;
     @JsonProperty("password")
     String password;
+    @JsonProperty("email")
+    String email;
 
     public String getFirstname() {
         return firstname;
@@ -52,5 +54,9 @@ public class EndUserJson {
 
     public String getPassword() {
         return password;
+    }
+    
+    public String getEmail() {
+        return email;
     }
 }
